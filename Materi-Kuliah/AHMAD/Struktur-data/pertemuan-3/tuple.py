@@ -1,24 +1,26 @@
-#membuat tuple
 import sys
-logsApps=("User1 Login", "User2 Login")
-print(logsApps)
-print("Memiliki ukuran Tuple", sys.getsizeof(logsApps))
+#membuat tuple
+logsapps = ("user1 login", "user2 login")
+print(logsapps)
+print("memiliki ukuran tuple", sys.getsizeof(logsapps))
 
-#buktikan bahwa tuple bersifat imutable
-#menambahkan elemen kedalam tuple
-#logsApps.append("User3 Login")
-#logsApps[0]="User4 Login"
-#logsApps.remove("User2 Login")
+logsapps_list = ["user1 login", "user2 login"]
+print(logsapps_list)
+print("memiliki ukuran list", sys.getsizeof(logsapps_list))
 
-#pembuktian bahwa tuple bisa diakses dengan index
-print(logsApps[0])#akses index ke-0
-print(logsApps[-1])#akses index ke-1
+#logsapps.append("user3 login") #error karena tuple tidak bisa diubah
+#logsapps [0] = "user1 logout" #error karena tuple tidak bisa diubah
+#logsapps.remove("user1 login") #error karena tuple tidak bisa diubah
+
+#pembuktian bahwa tuple bisa di akses dengan index
+print(logsapps[0])
+print(logsapps[-1])
 
 #slice dan copy
-print(logsApps[0:1])
-backup_logsApps: = logsApps[:]
-print(backup_logsApps)
+print(logsapps[0:1])
+backup_logsapps = logsapps[:]
+print(backup_logsapps)
 
-
-
-
+usr1, usr2 = logsapps
+print(usr1)
+print(usr2)
